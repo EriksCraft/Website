@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+            <meta name="description" content="A simple platformer game made with JavaScript. One of the games I made learning JavaScript.">
+            <meta name="author" content="BuckySide">
+            <link rel="icon" type="image/png" href="./images/Mr. BuckySide.png"/>
+            <link rel="stylesheet" href="./style.css">
+        <!-- fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/5ba52ab842.js" crossorigin="anonymous"></script>
+            <script type="text/javascript">
+            <!--
+            var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+            if (document.location.protocol == 'https:')
+                unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+            document.write('<script type="text/javascript" src="' + unityObjectUrl + '"></script>');
+            -->
+            </script>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-49E46GXHL0"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-49E46GXHL0');
+            </script>
+    <link rel="stylesheet" href="./gamelounge/gameLoungeStyle.css">
+</head>
+<div id="container">
+        <section id="home">
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="/blogs/blogs.html">Blogs</a>
+                <a href="games.html">Games</a>
+            </div>
+            <body>
+                <div id="wrap">
+                    <br>
+                    <title>Platformer game</title>
+                    <br>
+                    <p>I made this game in JavaScript as a learning experience. It's far from perfect but I feel like it works well enough to be played and have fun.</p>
+                    <br>
+                    <br>
+                    <!-- Platform Game -->
+                    <div id="platformGame">
+                        <div id="platformGameControls">
+                            <button class="button" onclick="loadLevel1()"><span id="platformGameLevel1"></span></button>
+                            <button class="button" onclick="loadLevel2()"><span id="platformGameLevel2"></span></button>
+                            <button class="button" onclick="loadLevel3()"><span id="platformGameLevel3"></span></button>
+                            <button class="button" onclick="loadLevel4()"><span id="platformGameLevel4"></span></button>
+                            <button class="button" onclick="loadLevel5()"><span id="platformGameLevel5"></span></button>
+                        </div>
+                        <canvas width=1280 height=720 id="gameCanvas"></cavas>
+                    </div>
+                </div>
+            </body>
+        <footer id="footer">
+            <b>Socials:</b>
+            <a class="socials" href="https://www.twitch.tv/buckyside" target="_blank"><i class="fa-brands fa-twitch fa-xl" style="color: #131313;"></i></a>
+            <a class="socials" href="https://discord.gg/sNj897tNdE" target="_blank"><i class="fa-brands fa-discord fa-xl" style="color: #131313;"></i></a>
+            <a class="socials" href="mailto:buckyside@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-xl" style="color: #131313;"></i></a>
+            <a class="socials" href="https://www.youtube.com/channel/UCi7eHWvpB9wFnbNONZ4L64g" target="_blank"><i class="fa-brands fa-youtube fa-xl" style="color: #131313;"></i></a>
+            <a class="socials" href="https://twitter.com/SideBucky" target="_blank"><i class="fa-brands fa-twitter fa-xl" style="color: #131313;"></i></a>
+        </footer>
+    </section>
+</div>
+<script src="./gamelounge/platformGameScript.js"></script>
+<script src="./gamelounge/jumpScript.js"></script>
+</html>
